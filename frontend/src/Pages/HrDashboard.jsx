@@ -137,7 +137,7 @@ const HrDashboard = () => {
 
   const fetchNotifications = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/notifications/hr", {
+      const res = await axios.get("http://https://mern-project-eas.onrender.com/api/notifications/hr", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -160,7 +160,7 @@ const HrDashboard = () => {
     if (isOpening) {
       try {
         await axios.put(
-          "http://localhost:5000/api/notifications/read-all/hr",
+          "http://https://mern-project-eas.onrender.com/api/notifications/read-all/hr",
           {},
           {
             headers: {

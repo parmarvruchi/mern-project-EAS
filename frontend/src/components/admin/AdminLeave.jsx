@@ -13,7 +13,7 @@ const AdminLeave = () => {
   const fetchLeaves = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/admin/leaves",
+        "http://https://mern-project-eas.onrender.com/api/admin/leaves",
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -27,7 +27,7 @@ const AdminLeave = () => {
   const updateStatus = async (id, status) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/admin/leave-status/${id}`,
+        `http://https://mern-project-eas.onrender.com/api/admin/leave-status/${id}`,
         { status },
         {
           headers: { Authorization: `Bearer ${token}` },

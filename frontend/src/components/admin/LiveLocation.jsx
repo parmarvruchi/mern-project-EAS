@@ -44,7 +44,7 @@ const LiveLocation = () => {
   const fetchLocations = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/admin/live-locations",
+        "http://https://mern-project-eas.onrender.com/api/admin/live-locations",
         {
           headers: {
             Authorization: `Bearer ${token}`,

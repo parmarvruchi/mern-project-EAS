@@ -12,7 +12,7 @@ const Department = () => {
   // 🔹 Fetch Departments
   const fetchDepartments = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/departments", {
+      const res = await axios.get("http://https://mern-project-eas.onrender.com/api/departments", {
         headers: { Authorization: `Bearer ${token}` }
       });
       setDepartments(res.data);
@@ -38,7 +38,7 @@ const Department = () => {
       if (editId) {
         // Update
         await axios.put(
-          `http://localhost:5000/api/departments/${editId}`,
+          `http://https://mern-project-eas.onrender.com/api/departments/${editId}`,
           { name },
           { headers: { Authorization: `Bearer ${token}` } }
         );
@@ -47,7 +47,7 @@ const Department = () => {
       } else {
         // Add
         await axios.post(
-          "http://localhost:5000/api/departments",
+          "http://https://mern-project-eas.onrender.com/api/departments",
           { name },
           { headers: { Authorization: `Bearer ${token}` } }
         );
@@ -67,7 +67,7 @@ const Department = () => {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/departments/${id}`,
+        `http://https://mern-project-eas.onrender.com/api/departments/${id}`,
         { headers: { Authorization: `Bearer ${token}` } }
       );
       alert("Department Deleted ❌");
