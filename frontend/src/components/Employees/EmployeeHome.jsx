@@ -34,7 +34,7 @@ const EmployeeHome = ({ getNotificationIcon, formatNotificationTime }) => {
 
       const token = localStorage.getItem("token");
 
-      const res = await axios.get("http://https://mern-project-eas.onrender.com/api/employee/home", {
+      const res = await axios.get("https://://mern-project-eas.onrender.com/api/employee/home", {
         headers: { Authorization: `Bearer ${token}` },
       });
 

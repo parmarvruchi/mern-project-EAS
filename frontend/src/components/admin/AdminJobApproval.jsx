@@ -12,7 +12,7 @@ const AdminJobApproval = () => {
   const fetchPendingJobs = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://https://mern-project-eas.onrender.com/api/admin/jobs/pending", {
+      const res = await axios.get("https://://mern-project-eas.onrender.com/api/admin/jobs/pending", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setJobs(res.data.jobs || []);
@@ -25,7 +25,7 @@ const AdminJobApproval = () => {
     try {
       const token = localStorage.getItem("token");
       await axios.put(
-        `http://https://mern-project-eas.onrender.com/api/admin/jobs/${id}/status`,
+        `https://://mern-project-eas.onrender.com/api/admin/jobs/${id}/status`,
         { status },
         { headers: { Authorization: `Bearer ${token}` } }
       );

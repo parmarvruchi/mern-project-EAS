@@ -21,7 +21,7 @@ const EmployeeSurvey = () => {
       setLoading(true);
 
       const res = await axios.get(
-        "http://https://mern-project-eas.onrender.com/api/employee/engagement/surveys",
+        "https://://mern-project-eas.onrender.com/api/employee/engagement/surveys",
         authHeader
       );
 
@@ -67,7 +67,7 @@ const EmployeeSurvey = () => {
 
     try {
       const res = await axios.post(
-        `http://https://mern-project-eas.onrender.com/api/employee/engagement/respond/${selectedSurvey._id}`,
+        `https://://mern-project-eas.onrender.com/api/employee/engagement/respond/${selectedSurvey._id}`,
         { answers, overallComment },
         authHeader
       );

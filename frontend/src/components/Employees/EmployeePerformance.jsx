@@ -25,7 +25,7 @@ const EmployeePerformance = () => {
       setLoading(true);
 
       const res = await axios.get(
-        "http://https://mern-project-eas.onrender.com/api/employee/performance/summary",
+        "https://://mern-project-eas.onrender.com/api/employee/performance/summary",
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -24,7 +24,7 @@ const AdminRecruitmentDashboard = () => {
     try {
       const token = localStorage.getItem("token");
       const res = await axios.get(
-        "http://https://mern-project-eas.onrender.com/api/admin/recruitment/dashboard",
+        "https://://mern-project-eas.onrender.com/api/admin/recruitment/dashboard",
         {
           headers: { Authorization: `Bearer ${token}` },
         }

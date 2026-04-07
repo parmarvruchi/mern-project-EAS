@@ -18,7 +18,7 @@ const PayrollList = () => {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await axios.get("http://https://mern-project-eas.onrender.com/api/admin/payroll", {
+      const res = await axios.get("https://://mern-project-eas.onrender.com/api/admin/payroll", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -35,7 +35,7 @@ const PayrollList = () => {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `http://https://mern-project-eas.onrender.com/api/admin/payroll/${id}/approve`,
+        `https://://mern-project-eas.onrender.com/api/admin/payroll/${id}/approve`,
         {},
         {
           headers: {
@@ -59,7 +59,7 @@ const PayrollList = () => {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `http://https://mern-project-eas.onrender.com/api/admin/payroll/${id}/reject`,
+        `https://://mern-project-eas.onrender.com/api/admin/payroll/${id}/reject`,
         { rejectionReason },
         {
           headers: {
@@ -80,7 +80,7 @@ const PayrollList = () => {
       const token = localStorage.getItem("token");
 
       const { data } = await axios.post(
-        `http://https://mern-project-eas.onrender.com/api/admin/payroll/${payroll._id}/create-order`,
+        `https://://mern-project-eas.onrender.com/api/admin/payroll/${payroll._id}/create-order`,
         {},
         {
           headers: {
@@ -98,7 +98,7 @@ const PayrollList = () => {
         order_id: data.order.id,
         handler: async function (response) {
           await axios.post(
-            "http://https://mern-project-eas.onrender.com/api/admin/payroll/verify-payment",
+            "https://://mern-project-eas.onrender.com/api/admin/payroll/verify-payment",
             {
               payrollId: payroll._id,
               razorpay_order_id: response.razorpay_order_id,

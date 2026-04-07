@@ -35,7 +35,7 @@ const EmployeePayrollHistory = () => {
       setLoading(true);
 
       const res = await axios.get(
-        "http://https://mern-project-eas.onrender.com/api/employee/payroll/history",
+        "https://://mern-project-eas.onrender.com/api/employee/payroll/history",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

@@ -18,7 +18,7 @@ const employeesPerPage = 5;
     const fetchEmployees = async () => {
       try {
         const response = await axios.get(
-          "http://https://mern-project-eas.onrender.com/api/employees",
+          "https://://mern-project-eas.onrender.com/api/employees",
           {
             headers: { Authorization: `Bearer ${token}` }
           }
@@ -43,7 +43,7 @@ const employeesPerPage = 5;
 
     try {
       await axios.delete(
-        `http://https://mern-project-eas.onrender.com/api/employees/${id}`,
+        `https://://mern-project-eas.onrender.com/api/employees/${id}`,
         {
           headers: { Authorization: `Bearer ${token}` }
         }
