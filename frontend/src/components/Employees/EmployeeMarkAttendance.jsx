@@ -29,7 +29,7 @@ const EmployeeMarkAttendance = () => {
   const fetchTodayAttendance = async () => {
     try {
       const res = await axios.get(
-        "https://://mern-project-eas.onrender.com/api/employee/attendance/today",
+        "https://mern-project-eas.onrender.com/api/employee/attendance/today",
         config
       );
 
@@ -73,7 +73,7 @@ const EmployeeMarkAttendance = () => {
       payload = { ...payload, ...location };
 
       const res = await axios.post(
-        "https://://mern-project-eas.onrender.com/api/employee/attendance/check-in",
+        "https://mern-project-eas.onrender.com/api/employee/attendance/check-in",
         payload,
         config
       );
@@ -98,7 +98,7 @@ const EmployeeMarkAttendance = () => {
       setLoading(true);
 
       const res = await axios.put(
-        "https://://mern-project-eas.onrender.com/api/employee/attendance/check-out",
+        "https://mern-project-eas.onrender.com/api/employee/attendance/check-out",
         {},
         config
       );

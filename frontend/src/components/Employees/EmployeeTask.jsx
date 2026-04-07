@@ -15,7 +15,7 @@ const [submissionRemarks, setSubmissionRemarks] = useState({});
   const fetchEmployee = async () => {
     try {
       const res = await axios.get(
-        "https://://mern-project-eas.onrender.com/api/employee-dashboard",
+        "https://mern-project-eas.onrender.com/api/employee-dashboard",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -32,7 +32,7 @@ const [submissionRemarks, setSubmissionRemarks] = useState({});
   // Fetch tasks
   const fetchTasks = async () => {
     try {
-      const res = await axios.get("https://://mern-project-eas.onrender.com/api/employee/tasks", {
+      const res = await axios.get("https://mern-project-eas.onrender.com/api/employee/tasks", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -53,7 +53,7 @@ const [submissionRemarks, setSubmissionRemarks] = useState({});
   const updateStatus = async (id, status) => {
     try {
       await axios.put(
-        `https://://mern-project-eas.onrender.com/api/employee/tasks/${id}`,
+        `https://mern-project-eas.onrender.com/api/employee/tasks/${id}`,
         {
           status,
           remarks: remarks[id] || "",
@@ -81,7 +81,7 @@ const [submissionRemarks, setSubmissionRemarks] = useState({});
     }
 
     await axios.put(
-      `https://://mern-project-eas.onrender.com/api/employee/tasks/${id}/submit`,
+      `https://mern-project-eas.onrender.com/api/employee/tasks/${id}/submit`,
       formData,
       {
         headers: {
@@ -144,7 +144,7 @@ const [submissionRemarks, setSubmissionRemarks] = useState({});
               {task.attachment && (
   <div className="employee-task-attachment">
     <a
-      href={`https://://mern-project-eas.onrender.com/${task.attachment}`}
+      href={`https://mern-project-eas.onrender.com/${task.attachment}`}
       target="_blank"
       rel="noreferrer"
     >
@@ -155,7 +155,7 @@ const [submissionRemarks, setSubmissionRemarks] = useState({});
 {task.employeeSubmission && (
   <div className="employee-task-attachment">
     <a
-      href={`https://://mern-project-eas.onrender.com/${task.employeeSubmission}`}
+      href={`https://mern-project-eas.onrender.com/${task.employeeSubmission}`}
       target="_blank"
       rel="noreferrer"
     >

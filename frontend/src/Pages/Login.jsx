@@ -19,7 +19,7 @@ export default function Login() {
     try {
       // ✅ Single Login API Call
       const response = await axios.post(
-        "https://://mern-project-eas.onrender.com/api/login",
+        "https://mern-project-eas.onrender.com/api/login",
         { email, password }
       );
 

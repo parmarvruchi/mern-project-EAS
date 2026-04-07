@@ -23,7 +23,7 @@ const AttendanceReport = () => {
 
     try {
       const res = await axios.get(
-        "https://://mern-project-eas.onrender.com/api/admin/attendance",
+        "https://mern-project-eas.onrender.com/api/admin/attendance",
         config
       );
 
@@ -78,7 +78,7 @@ const AttendanceReport = () => {
 
   try {
     const res = await axios.get(
-      "https://://mern-project-eas.onrender.com/api/admin/attendance",
+      "https://mern-project-eas.onrender.com/api/admin/attendance",
       config
     );
 

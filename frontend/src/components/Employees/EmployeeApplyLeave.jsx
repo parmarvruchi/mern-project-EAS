@@ -18,7 +18,7 @@ const EmployeeApplyLeave = () => {
     const fetchEmployee = async () => {
       try {
         const res = await axios.get(
-          "https://://mern-project-eas.onrender.com/api/employee-dashboard",
+          "https://mern-project-eas.onrender.com/api/employee-dashboard",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`
@@ -40,7 +40,7 @@ const EmployeeApplyLeave = () => {
 
     try {
       await axios.post(
-        "https://://mern-project-eas.onrender.com/api/leave/apply",
+        "https://mern-project-eas.onrender.com/api/leave/apply",
         form,
         {
           headers: {

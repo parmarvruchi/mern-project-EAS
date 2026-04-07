@@ -18,7 +18,7 @@ const AttendanceRequests = () => {
   const fetchRequests = async () => {
     try {
       const res = await axios.get(
-        "https://://mern-project-eas.onrender.com/api/attendance/requests",
+        "https://mern-project-eas.onrender.com/api/attendance/requests",
         config
       );
       setRequests(res.data);
@@ -30,7 +30,7 @@ const AttendanceRequests = () => {
   const updateRequestStatus = async (id, status) => {
     try {
       await axios.put(
-        `https://://mern-project-eas.onrender.com/api/attendance/requests/${id}`,
+        `https://mern-project-eas.onrender.com/api/attendance/requests/${id}`,
         { status },
         config
       );

@@ -159,7 +159,7 @@ const Dashboard = () => {
   const fetchNotifications = async () => {
     try {
       const res = await axios.get(
-        `https://://mern-project-eas.onrender.com/api/notifications/${role}`,
+        `https://mern-project-eas.onrender.com/api/notifications/${role}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -183,7 +183,7 @@ const Dashboard = () => {
     if (isOpening) {
       try {
         await axios.put(
-          `https://://mern-project-eas.onrender.com/api/notifications/read-all/${role}`,
+          `https://mern-project-eas.onrender.com/api/notifications/read-all/${role}`,
           {},
           {
             headers: {

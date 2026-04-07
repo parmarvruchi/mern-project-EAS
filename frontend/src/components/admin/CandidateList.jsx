@@ -14,7 +14,7 @@ const CandidateList = () => {
   const fetchCandidates = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get("https://://mern-project-eas.onrender.com/api/hr/candidates", {
+      const res = await axios.get("https://mern-project-eas.onrender.com/api/hr/candidates", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setCandidates(res.data.candidates || []);
@@ -28,7 +28,7 @@ const CandidateList = () => {
     try {
       const token = localStorage.getItem("token");
       const res = await axios.put(
-        `https://://mern-project-eas.onrender.com/api/hr/candidates/${id}/status`,
+        `https://mern-project-eas.onrender.com/api/hr/candidates/${id}/status`,
         { status },
         { headers: { Authorization: `Bearer ${token}` } },
       );
@@ -108,7 +108,7 @@ const CandidateList = () => {
                     {candidate.resume ? (
                       <div className="recruitment-actions">
                         <a
-                          href={`https://://mern-project-eas.onrender.com/api/download-resume/${candidate.resume.split("/").pop()}`}
+                          href={`https://mern-project-eas.onrender.com/api/download-resume/${candidate.resume.split("/").pop()}`}
                           className="recruitment-btn secondary"
                           style={{
                             textDecoration: "none",

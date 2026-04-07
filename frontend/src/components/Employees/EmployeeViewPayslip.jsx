@@ -39,7 +39,7 @@ const EmployeeViewPayslip = () => {
       setMessage("");
 
       const res = await axios.get(
-        `https://://mern-project-eas.onrender.com/api/employee/payroll/view?month=${month}&year=${year}`,
+        `https://mern-project-eas.onrender.com/api/employee/payroll/view?month=${month}&year=${year}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

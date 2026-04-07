@@ -19,7 +19,7 @@ export default function Careers() {
       setLoading(true);
       setError("");
 
-      const res = await axios.get("https://://mern-project-eas.onrender.com/api/jobs");
+      const res = await axios.get("https://mern-project-eas.onrender.com/api/jobs");
 
       // Safe check
       if (res.data && Array.isArray(res.data.jobs)) {
